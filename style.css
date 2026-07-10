@@ -7,20 +7,36 @@ body {
   overflow: hidden;
 }
 
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
-    #bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
+#enter-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  z-index: 100;
+  cursor: pointer;
+  font-family: Arial;
+}
+
 .content {
   position: relative;
   top: 50vh;
   transform: translateY(-50%);
+  display: none;
 }
 
 h1 {
@@ -43,17 +59,4 @@ p {
 
 .socials img:hover {
   transform: scale(1.2);
-}
-#soundBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  padding: 10px 15px;
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: 1px solid white;
-  border-radius: 50px;
-  font-size: 16px;
-  cursor: pointer;
 }
