@@ -44,3 +44,16 @@ p {
 .socials img:hover {
   transform: scale(1.2);
 }
+#soundBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  padding: 10px 15px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
