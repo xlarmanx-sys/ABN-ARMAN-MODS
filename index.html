@@ -21,6 +21,21 @@
                 <img src="discord.png" alt="Discord">
             </a>
         </div>
-    </div>
+<button id="soundBtn">🔊 Sound On</button>
+
+<script>
+  const video = document.getElementById('bg-video');
+  const btn = document.getElementById('soundBtn');
+  
+  btn.onclick = () => {
+    if(video.muted){
+      video.muted = false;
+      btn.innerText = "🔇 Sound Off";
+    } else {
+      video.muted = true;
+      btn.innerText = "🔊 Sound On";
+    }
+  }
+</script>    </div>
 </body>
 </html>
